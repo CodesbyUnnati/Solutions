@@ -54,6 +54,8 @@ head=n;
         }
         cout << "NULL" << endl;
     }
+/*
+// This is not an operation of linked list
     bool search(node * head, int key)
     {
         node *temp = head;
@@ -67,6 +69,7 @@ head=n;
         }
         return false;
     }
+    */
 
     int main()
     {
@@ -75,7 +78,7 @@ head=n;
         insertAtHead(head, 4);
         insertAtTail(head, 10);
         deleteAtHead(head);
-        search(head, 10);
+       // search(head, 10);
         display(head);
 
     return 0;
