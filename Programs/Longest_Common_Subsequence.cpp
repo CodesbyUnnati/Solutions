@@ -36,7 +36,7 @@ public:
             */
            for(int j=1;j<n;j++)
            {
-               if(c!=strs[j][i]) // i will be 0 only
+               if(c!=strs[j][i]) // i will be 0...then 1...2
                {
                    return res;
                }
