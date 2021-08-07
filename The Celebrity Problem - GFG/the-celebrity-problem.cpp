@@ -27,7 +27,8 @@ class Solution
             if(i!=celebrity && (M[celebrity][i]==1 || M[i][celebrity]==0)) return -1;
         }
        return celebrity;
-        // int in[n] = {0} ; int out[n] = {0} ;
+       
+        // int in[n] = {0}// ye kis kis ko pehchanta h ; int out[n] = {0} ; //sab isko kitna pehchnate h
         
         // for(int i=0;i<n;i++)
         // {
@@ -42,7 +43,8 @@ class Solution
         // }
         // for(int i=0;i<n;i++)
         // {
-        //     if(in[i]==n-1 && out[i]==0)
+        //     if(in[i]==n-1 && out[i]==0)//in is recognised by everyone and its out is zero
+        //means out do not know anyone, so it is a celeb
         //     return 1;
         // }
         // return -1;
