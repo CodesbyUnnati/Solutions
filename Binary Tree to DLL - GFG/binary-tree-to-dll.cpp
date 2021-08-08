@@ -112,23 +112,23 @@ class Solution
      {
           if(!root) return;
           //inorder traversal of binary tree into doubly linked list
-          solve(root->left,head,prev,f);
+          solve(root->left,head,prev,f); //left
           if(f==0)
           {
-              f=1;
+              f=1;         //root
               head=root;
               prev=root;
               
           }
           else
           {
-              prev->right=root;
-              prev->right->left=prev;
-              prev=prev->right;
+              prev->right=root; //next element
+              prev->right->left=prev;  //prev pointer
+              prev=prev->right; //next pointer
           }
-          solve(root->right,head,prev,f);
+          solve(root->right,head,prev,f);    //right
      }
-   
+     
     Node * bToDLL(Node *root)
     {
         Node* head=NULL;
