@@ -11,7 +11,8 @@ using namespace std;
 #include <bits/stdc++.h>
 using namespace std;
 
-//solving by using boyre moore's voting algorithm; find element that has repeated more than n/2 times
+//solving by using boyre moore's voting algorithm;
+//find element that has repeated more than n/2 times
 
 int findCand(int a[], int n){
     int maj_indx=0, c=1;
@@ -34,9 +35,6 @@ bool isMaj(int a[], int n, int cand){
     }
     return (c>n/2)? true: false;
 }
-
-
-
 
 int main() {
 	int t; 
