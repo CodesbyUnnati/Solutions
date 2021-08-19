@@ -34,6 +34,7 @@ class Solution{
     //Function to check whether the list is palindrome.
     bool isPalindrome(Node *head)
     {
+        //MID OF LINKED LIST
         Node* slow=head;
         Node* fast=head;
         while(fast!=NULL && fast->next!=NULL)
@@ -41,6 +42,7 @@ class Solution{
             slow=slow->next;
             fast=fast->next->next;
         }
+        //REVERSE LINKED LIST
         Node* prev=NULL;
         Node* curr=slow;
         Node* next;
@@ -51,6 +53,7 @@ class Solution{
         prev=curr;
         curr=next;
         }
+        //CHECK
         fast=head;
         while(prev!=NULL)
         {
