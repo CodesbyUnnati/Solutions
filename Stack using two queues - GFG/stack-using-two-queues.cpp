@@ -80,4 +80,5 @@ int QueueStack :: pop()
             q2.pop();
         }
         return ans;
-}
+}//TC= O(N)
+//SC=O(N)
