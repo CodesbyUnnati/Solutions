@@ -75,7 +75,7 @@ int StackQueue :: pop()
         if (s2.empty())
         {
             while (!s1.empty())
-            {
+            { //push all elements of s1 into s2 and pop from s1
                 s2.push(s1.top());
                 s1.pop();
             }
